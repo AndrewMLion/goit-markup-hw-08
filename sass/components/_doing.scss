@@ -1,0 +1,22 @@
+.doing {
+  padding-top: 0;
+}
+
+.doing__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  text-align: center;
+}
+
+.doing__list {
+  display: flex;
+
+  margin-top: 50px;
+  margin-right: -30px;
+}
+
+.doing__item {
+  flex-basis: calc(100% - 90px / 3);
+}

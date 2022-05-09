@@ -1,0 +1,40 @@
+.headercont {
+  display: flex;
+  margin-left: auto;
+
+  align-items: center;
+}
+
+.headercont__item:last-child {
+  margin-left: 50px;
+}
+
+.headercont__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: getColor('title-text-color');
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.mail,
+.phone {
+  display: flex;
+}
+
+.icon-mail {
+  fill: currentColor;
+
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  fill: currentColor;
+
+  margin-right: 10px;
+}

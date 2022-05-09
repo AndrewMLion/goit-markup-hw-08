@@ -1,0 +1,20 @@
+.team-foto-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-foto-title__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.team-foto-title__role {
+  color: getColor('title-text-color');
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
