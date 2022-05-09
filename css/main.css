@@ -634,7 +634,7 @@ svg {
 }
 
 .clients__title {
-  font-weight: 700;
+  line-height: 1.16;
   text-align: center;
 }
 
@@ -671,9 +671,13 @@ svg {
 }
 
 .clients__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.clients__item:nth-child(odd) {
+  margin-right: 26px;
 }
 
 .clients__link {
@@ -693,7 +697,7 @@ svg {
 
 @media screen and (min-width: 480px) {
   .clients__icon {
-    margin: 16px 52px;
+    margin: 15px 51px;
   }
 }
 
@@ -708,9 +712,6 @@ svg {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   -webkit-box-align: center;
@@ -719,10 +720,27 @@ svg {
   background-color: #2f303a;
 }
 
-.footer__container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer__container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: initial;
+  }
 }
 
 .logo__footer {
@@ -744,12 +762,23 @@ svg {
 }
 
 .address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (min-width: 480px) {
+  .address {
+    display: block;
+  }
+}
+
+@media screen and (1200px) {
+  .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .address__item:not(:first-child) {
@@ -767,8 +796,20 @@ svg {
 .footer-social {
   display: block;
   fill: var(--icon-social);
-  margin-top: 12px;
-  margin-left: 70px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-social {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
 }
 
 .footer-social__title {
@@ -782,7 +823,21 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0 0 0;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-social__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social__list {
+    margin: 20px 0 0 0;
+  }
 }
 
 .footer-social__item {
@@ -816,8 +871,13 @@ svg {
 
 .subscribe {
   position: relative;
-  margin-top: 12px;
-  margin-left: 93px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
 }
 
 .subscribe__title {
@@ -828,8 +888,6 @@ svg {
 }
 
 .subscibe__mail {
-  padding: 15px;
-  width: 358px;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -842,17 +900,37 @@ svg {
   outline: none;
 }
 
-.subscribe__input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
+@media screen and (min-width: 480px) {
+  .subscibe__mail {
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscibe__mail {
+    margin: 0;
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+  }
 }
 
 .subscribe-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -862,7 +940,6 @@ svg {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  margin-left: 15px;
   border: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -870,6 +947,23 @@ svg {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 15px;
+  }
 }
 
 .subscribe-btn__icon {

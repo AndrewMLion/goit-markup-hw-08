@@ -3,8 +3,7 @@
 }
 
 .clients__title {
-  font-weight: 700;
-
+  line-height: 1.16;
   text-align: center;
 
   @media screen and (min-width: 480px) {
@@ -31,7 +30,11 @@
 }
 
 .clients__item {
-  display: flex;
+  display: inline-flex;
+}
+
+.clients__item:nth-child(odd) {
+  margin-right: 26px;
 }
 
 .clients__link {
@@ -43,16 +46,15 @@
 }
 
 .clients__icon {
-  @media screen and (min-width: 480px) {
-    margin: 16px 52px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin: 16px 32px;
-  }
   fill: getColor('icon-social');
 
   transition: fill getTiming('timing');
+  @media screen and (min-width: 480px) {
+    margin: 15px 51px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 16px 32px;
+  }
 }
 
 .clients__link:hover .clients__icon {

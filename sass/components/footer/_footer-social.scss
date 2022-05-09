@@ -2,8 +2,14 @@
   display: block;
   fill: var(--icon-social);
 
-  margin-top: 12px;
-  margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
 }
 
 .footer-social__title {
@@ -16,7 +22,13 @@
 .footer-social__list {
   display: flex;
 
-  margin: 20px 0 0 0;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 20px 0 0 0;
+  }
 }
 
 .footer-social__item {

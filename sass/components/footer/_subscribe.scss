@@ -1,7 +1,10 @@
 .subscribe {
   position: relative;
-  margin-top: 12px;
-  margin-left: 93px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
 }
 
 .subscribe__title {
@@ -12,8 +15,15 @@
 }
 
 .subscibe__mail {
-  padding: 15px;
-  width: 358px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    width: 358px;
+  }
 
   border: none;
 
@@ -29,6 +39,11 @@
 }
 
 .subscribe__input {
-  display: flex;
-  margin-top: 20px;
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 20px;
+  }
 }
