@@ -1,8 +1,10 @@
 .headercont {
-  display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
 
-  align-items: center;
+    align-items: center;
+  }
 }
 
 .headercont__item:last-child {

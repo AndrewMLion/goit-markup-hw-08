@@ -31,13 +31,18 @@
 
 .clients__item {
   display: inline-flex;
+
+  &:nth-child(odd) {
+    @media screen and (max-width: 767px) {
+      margin-right: 26px;
+    }
+  }
+  &:nth-child(n + 2) {
+    margin-top: 30px;
+  }
 }
 
-.clients__item:nth-child(odd) {
-  margin-right: 26px;
-}
-
-.clients__link {
+.clients__item .clients__link {
   border: 1px solid getColor('icon-social');
   box-sizing: border-box;
   border-radius: 4px;
