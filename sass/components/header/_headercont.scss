@@ -8,13 +8,20 @@
 
     align-items: center;
   }
-}
-.headercont__item:last-child {
-  @media screen and (max-width: 767px) {
-    margin-top: 32px;
-  }
   @media screen and (min-width: 1200px) {
-    margin-left: 50px;
+    flex-direction: row-reverse;
+  }
+}
+.headercont__item {
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      margin-top: 32px;
+    }
+  }
+  &:first-child {
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
   }
 }
 
