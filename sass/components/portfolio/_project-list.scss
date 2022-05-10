@@ -62,3 +62,9 @@
 .project-list__item:hover .cards-overlay {
   transform: translateY(0);
 }
+
+.project-list__img {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+}

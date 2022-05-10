@@ -13,6 +13,10 @@
     display: none;
   }
 
+  &:hover {
+    fill: getColor('accent-color');
+  }
+
   & .icon-cross {
     display: none;
   }

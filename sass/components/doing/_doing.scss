@@ -23,3 +23,9 @@
 .doing__item {
   flex-basis: calc(100% - 90px / 3);
 }
+
+.doing__img {
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}

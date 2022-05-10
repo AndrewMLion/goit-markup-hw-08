@@ -11,4 +11,6 @@
   opacity: 1;
 
   transition: opacity getTiming('timing');
+
+  overflow-y: scroll;
 }
