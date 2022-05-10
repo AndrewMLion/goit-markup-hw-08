@@ -32,13 +32,14 @@
 .clients__item {
   display: inline-flex;
 
-  &:nth-child(odd) {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
+    &:nth-child(odd) {
       margin-right: 26px;
     }
-  }
-  &:nth-child(n + 2) {
-    margin-top: 30px;
+
+    &:nth-child(n + 2) {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -48,6 +49,9 @@
   border-radius: 4px;
 
   transition: border getTiming('timing');
+  &:hover {
+    border-color: getColor('accent-color');
+  }
 }
 
 .clients__icon {
