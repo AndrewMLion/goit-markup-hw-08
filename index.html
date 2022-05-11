@@ -185,12 +185,17 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img class="team__img" 
-              srcset="./images/team-card-1-450.jpg 1x, 
-                          ./images/team-card-1-900.jpg 2x, 
-                          ./images/team-card-1-270.jpg 1x, 
-                          ./images/team-card-1-540.jpg 2x"
-              src="./images/team-card-1-450.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source srcset="./images/team-card-1-450.jpg 1x, 
+                          ./images/team-card-1-900.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./images/team-card-1-354.jpg 1x, 
+                          ./images/team-card-1-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/team-card-1-270.jpg 1x, 
+                          ./images/team-card-1-540.jpg 2x" media="(min-width: 1200px)" />
+                          
+                <img class="team__img" src="./images/team-card-1.jpg" alt="Игорь Демьяненко" />
+              </picture>
+              
               <div class="team-foto-title">
                 <h3 class="team-foto-title__name">Игорь Демьяненко</h3>
                 <p class="team-foto-title__role">Product Designer</p>
@@ -221,8 +226,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" srcset="./images/team-card-2-450.jpg 1x, 
-                                    ./images/team-card-2-900.jpg 2x" src="team-card-2-450.jpg" alt="Ольга Репина" />
+              <picture>
+                  <source srcset="./images/team-card-2-450.jpg 1x, 
+                          ./images/team-card-2-900.jpg 2x" media="(max-width: 767px)" />
+                  <source srcset="./images/team-card-2-354.jpg 1x, 
+                          ./images/team-card-2-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                  <source srcset="./images/team-card-2-270.jpg 1x, 
+                          ./images/team-card-2-540.jpg 2x" media="(min-width: 1200px)" />
+
+                  <img class="team__img" src="team-card-2.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="team-foto-title">
                 <h3 class="team-foto-title__name">Ольга Репина</h3>
                 <p class="team-foto-title__role">Frontend Developer</p>
@@ -253,8 +266,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" srcset="./images/team-card-3-450.jpg 1x, 
-                                    ./images/team-card-3-900.jpg 2x" src="team-card-3-450.jpg" alt="Николай Тарасов" />
+              <picture>
+                    <source srcset="./images/team-card-3-450.jpg 1x, 
+                              ./images/team-card-3-900.jpg 2x" media="(max-width: 767px)" />
+                    <source srcset="./images/team-card-3-354.jpg 1x, 
+                          ./images/team-card-3-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/team-card-3-270.jpg 1x, 
+                              ./images/team-card-3-540.jpg 2x" media="(min-width: 1200px)" />
+                  <img class="team__img" src="team-card-3.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="team-foto-title">
                 <h3 class="team-foto-title__name">Николай Тарасов</h3>
                 <p class="team-foto-title__role">Marketing</p>
@@ -285,8 +305,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" srcset="./images/team-card-4-450.jpg 1x, 
-                                    ./images/team-card-4-900.jpg 2x" src="team-card-4-450.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <source srcset="./images/team-card-4-450.jpg 1x, 
+                          ./images/team-card-4-900.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./images/team-card-4-354.jpg 1x, 
+                          ./images/team-card-4-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/team-card-4-270.jpg 1x, 
+                          ./images/team-card-4-540.jpg 2x" media="(min-width: 1200px)" />
+
+              <img class="team__img" src="team-card-4.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="team-foto-title">
                 <h3 class="team-foto-title__name">Михаил Ермаков</h3>
                 <p class="team-foto-title__role">UI Designer</p>
