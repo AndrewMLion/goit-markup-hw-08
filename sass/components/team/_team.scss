@@ -30,7 +30,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-
+    margin: -15px;
     margin-top: 50px;
   }
 }
@@ -48,6 +48,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 4);
+    margin: 15px;
   }
 
   &:not(:first-child) {
