@@ -1,30 +1,26 @@
 .btn-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 0;
+  right: 0;
+  transform: translate(-30%, 30%);
 
   width: 30px;
   height: 30px;
-
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  background-color: getColor('background-color');
-
-  padding: 0;
+  outline-width: 0px;
 
   cursor: pointer;
-}
 
-.btn-close__icon {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  background-color: getColor('background-color');
+  &__icon {
+    width: 18px;
+    height: 18px;
 
-  transition: fill getTiming('timing');
+    fill: getColor('primary-text-color');
 
-  &:hover {
-    fill: getColor('accent-color');
+    .btn-close:hover > & {
+      fill: getColor('accent-color');
+    }
   }
 }

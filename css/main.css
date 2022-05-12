@@ -1367,30 +1367,26 @@ svg {
 
 .btn-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(-30%, 30%);
+          transform: translate(-30%, 30%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #ffffff;
-  padding: 0;
+  outline-width: 0px;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .btn-close__icon {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 18px;
+  height: 18px;
+  fill: #212121;
 }
 
-.btn-close__icon:hover {
+.btn-close:hover > .btn-close__icon {
   fill: #2196f3;
 }
 
@@ -1443,11 +1439,6 @@ svg {
   border-color: #2196f3;
 }
 
-.form__input:focus ~ .form__icon-name,
-.form__input:hover ~ .form__icon-name {
-  fill: #2196f3;
-}
-
 .form__icon-name {
   position: absolute;
   top: 50%;
@@ -1456,6 +1447,11 @@ svg {
           transform: translateY(-50%);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:focus ~ .form__icon-name,
+.form__input:hover ~ .form__icon-name {
+  fill: #2196f3;
 }
 
 .comment {
@@ -1695,7 +1691,9 @@ svg {
 
 @media screen and (min-width: 768px) {
   .project-list__item {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
@@ -1734,6 +1732,9 @@ svg {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
