@@ -1,41 +1,40 @@
 .social {
   display: block;
   fill: getColor('icon-social');
-}
 
-.social__list {
-  display: flex;
-  @media screen and (min-width: 480px) {
+  &__list {
+    display: flex;
+    @media screen and (min-width: 480px) {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 480px) {
+      margin-top: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 16px 32px 0 32px;
+
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 44px;
+    height: 44px;
     justify-content: center;
-  }
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
-  }
+    align-items: center;
 
-  @media screen and (min-width: 480px) {
-    margin-top: 16px;
-  }
+    border-radius: 50%;
 
-  @media screen and (min-width: 1200px) {
-    margin: 16px 32px 0 32px;
-  }
-}
+    transition: background-color getTiming('timing'), fill getTiming('timing');
 
-.social__item {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
+    cursor: pointer;
 
-  border-radius: 50%;
-
-  transition: background-color getTiming('timing'), fill getTiming('timing');
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: getColor('accent-color');
-    fill: getColor('background-color');
+    &:hover {
+      background-color: getColor('accent-color');
+      fill: getColor('background-color');
+    }
   }
 }

@@ -2,23 +2,23 @@
   @media screen and (min-width: 480px) {
     display: block;
   }
-  @media screen and (1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-}
 
-.address__item:not(:first-child) {
-  margin-top: 9px;
-}
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
 
-.address__link {
-  color: getColor('text-contact-footer');
-}
+  &__link {
+    color: getColor('text-contact-footer');
+  }
 
-.address__link--color {
-  color: getColor('background-color');
+  &__link--color {
+    color: getColor('background-color');
+  }
 }

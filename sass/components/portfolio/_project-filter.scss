@@ -1,55 +1,57 @@
-.project-filter__list {
-  display: flex;
+.project-filter {
+  &__list {
+    display: flex;
 
-  @media screen and (min-width: 480px) {
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+    font-size: 16px;
+
+    margin-bottom: 50px;
   }
 
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-  }
-  font-size: 16px;
-
-  margin-bottom: 50px;
-}
-
-.project-filter__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
-  @media screen and (max-width: 767px) {
-    &:nth-child(n + 4) {
-      margin-top: 8px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    @media screen and (max-width: 767px) {
+      &:nth-child(n + 4) {
+        margin-top: 8px;
+      }
     }
   }
-}
 
-.project-filter__button {
-  border: none;
-  padding: 6px 22px;
-  border-radius: 4px;
+  &__button {
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
 
-  font-weight: 500;
-  line-height: 1.62;
+    font-weight: 500;
+    line-height: 1.62;
 
-  background-color: getColor('second-background-color');
+    background-color: getColor('second-background-color');
 
-  cursor: pointer;
+    cursor: pointer;
 
-  &:hover {
-    background-color: getColor('accent-color');
-    color: getColor('background-color');
+    &:hover {
+      background-color: getColor('accent-color');
+      color: getColor('background-color');
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 
-    transition: background-color getTiming('timing'), color getTiming('timing'),
-      box-shadow getTiming('timing');
-  }
+      transition: background-color getTiming('timing'), color getTiming('timing'),
+        box-shadow getTiming('timing');
+    }
 
-  &.current {
-    background-color: getColor('accent-color');
-    color: getColor('background-color');
+    &.current {
+      background-color: getColor('accent-color');
+      color: getColor('background-color');
+    }
   }
 }

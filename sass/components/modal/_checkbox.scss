@@ -2,58 +2,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.checkbox__label {
-  position: relative;
+  &__label {
+    position: relative;
 
-  @media screen and (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.17;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+    @media screen and (min-width: 1200px) {
+      line-height: 1.71;
+    }
+
+    letter-spacing: 0.03em;
+
+    color: getColor('title-text-color');
+
+    padding-left: 8.5px;
+
+    cursor: pointer;
   }
-  @media screen and (min-width: 1200px) {
-    line-height: 1.71;
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowarp;
+    clip-path: insert(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
-  letter-spacing: 0.03em;
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/check.svg);
 
-  color: getColor('title-text-color');
+    transform: translateY(-50%);
+  }
 
-  padding-left: 8.5px;
+  &__agreement {
+    color: getColor('accent-color');
+  }
 
-  cursor: pointer;
-}
-
-.checkbox__input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowarp;
-  clip-path: insert(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.checkbox__icon {
-  position: absolute;
-  top: 50%;
-  left: -14px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url(../images/check.svg);
-
-  transform: translateY(-50%);
-}
-
-.checkbox__input:checked + .checkbox__icon {
-  background-color: getColor('secod-accent-color');
-  background-image: url(../images/check_aktiv.svg);
-}
-
-.checkbox__agreement {
-  color: getColor('accent-color');
+  &__input:checked + &__icon {
+    background-color: getColor('secod-accent-color');
+    background-image: url(../images/check_aktiv.svg);
+  }
 }

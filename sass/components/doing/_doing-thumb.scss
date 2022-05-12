@@ -1,31 +1,31 @@
 .doing-thumb {
   position: relative;
-}
 
-.doing-thumb__bg {
-  display: flex;
-  align-items: center;
+  &__bg {
+    display: flex;
+    align-items: center;
 
-  position: absolute;
-  width: 370px;
-  height: 70px;
+    position: absolute;
+    width: 370px;
+    height: 70px;
 
-  left: 0;
-  bottom: 0;
+    left: 0;
+    bottom: 0;
 
-  background: rgba(47, 48, 58, 0.8);
-}
+    background: rgba(47, 48, 58, 0.8);
+  }
 
-.doing-thumb__text {
-  display: flex;
-  justify-content: center;
+  &__text {
+    display: flex;
+    justify-content: center;
 
-  font-weight: 700;
-  line-height: 1.14;
+    font-weight: 700;
+    line-height: 1.14;
 
-  width: 100%;
+    width: 100%;
 
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: getColor('background-color');
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor('background-color');
+  }
 }

@@ -1,5 +1,5 @@
 .footer {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 
@@ -9,20 +9,20 @@
   align-items: center;
 
   background-color: getColor('header-and-footer-color');
-}
 
-.footer__container {
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  &__container {
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-  @media screen and (min-width: 1200px) {
-    display: inline-flex;
-    text-align: initial;
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      text-align: initial;
+    }
   }
 }
