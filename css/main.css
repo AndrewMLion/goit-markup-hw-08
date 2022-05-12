@@ -1736,6 +1736,12 @@ svg {
   line-height: 1.88;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__text--teblet {
+    margin-bottom: 36px;
+  }
+}
+
 .project-list__item:hover .cards-overlay {
   opacity: 1;
 }
