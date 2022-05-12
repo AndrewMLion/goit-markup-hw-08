@@ -14,6 +14,9 @@
     letter-spacing: 0.01em;
 
     color: getColor('title-text-color');
+
+    position: relative;
+    margin-top: 4px;
   }
 
   &__division {

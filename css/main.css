@@ -1407,6 +1407,8 @@ svg {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+  position: relative;
+  margin-top: 4px;
 }
 
 .form__division {
