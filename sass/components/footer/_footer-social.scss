@@ -26,12 +26,12 @@
   &__list {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    margin-top: 20px;
+
+    @media screen and (max-width: 767px) {
       justify-content: center;
-      margin-top: 20px;
     }
     @media screen and (min-width: 1200px) {
-      margin: 20px 0 0 0;
     }
   }
 

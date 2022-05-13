@@ -4,11 +4,8 @@
 
   &__list {
     display: flex;
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       justify-content: center;
-    }
-
-    @media screen and (min-width: 480px) {
       margin-top: 16px;
     }
 

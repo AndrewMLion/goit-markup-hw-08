@@ -44,23 +44,21 @@
   // }
 
   &__input {
-    @media screen and (min-width: 480px) {
-      margin-top: 20px;
+    margin-top: 20px;
+    @media screen and (max-width: 767px) {
     }
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      margin-top: 20px;
     }
   }
 }
 
 .subscibe__mail {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 15px;
-    padding: 15px;
-    width: 100%;
-  }
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+
   @media screen and (min-width: 1200px) {
     margin: 0;
     width: 358px;
