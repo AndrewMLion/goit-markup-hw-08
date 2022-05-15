@@ -41,20 +41,25 @@
 
   margin-bottom: 30px;
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 120px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  //   height: 120px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 120px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  //   height: 120px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 120px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 270px;
+  //   height: 120px;
+  // }
+}
+
+.icon__benefits {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .benefits__title {

@@ -105,13 +105,16 @@ button {
 
 .header {
   position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .menu {
@@ -488,19 +491,31 @@ button {
 
 .mobil-headercont__link--nomber {
   font-weight: 500;
-  font-size: calc(1em + 4vw);
+  font-size: 34px;
   line-height: 1.3;
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
 }
 
+@media screen and (max-width: 485px) {
+  .mobil-headercont__link--nomber {
+    font-size: calc(1em + 4vw);
+  }
+}
+
 .mobil-headercont__link--mail {
   font-weight: 500;
-  font-size: calc(1em + 2vw);
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+@media screen and (max-width: 485px) {
+  .mobil-headercont__link--mail {
+    font-size: calc(1em + 2vw);
+  }
 }
 
 .mobile-menu-social {
@@ -522,13 +537,17 @@ button {
 
 .mobile-menu-social__link {
   text-decoration: none;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 485px) {
+  .mobile-menu-social__link {
+    font-size: 3vw;
+  }
 }
 
 .hero {
@@ -703,25 +722,9 @@ button {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .attention {
-    width: 450px;
-    height: 120px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .attention {
-    width: 354px;
-    height: 120px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .attention {
-    width: 270px;
-    height: 120px;
-  }
+.icon__benefits {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .benefits__title {
@@ -820,17 +823,15 @@ button {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__title {
     font-size: 28px;
     line-height: 1.17;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .team__list {
-    margin-top: 30px;
-  }
+.team__list {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -935,6 +936,7 @@ button {
 
 .social {
   display: block;
+  margin-top: 16px;
   fill: #afb1b8;
 }
 
@@ -949,13 +951,12 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 16px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .social__list {
-    margin: 16px 32px 0 32px;
+    margin: 0 32px 0 32px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1701,7 +1702,7 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .project-filter__item:nth-child(n + 4) {
+  .project-filter__item {
     margin-top: 8px;
   }
 }
@@ -1783,7 +1784,20 @@ button {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.project-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .project-list__cards {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
@@ -1803,15 +1817,6 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project-list__text--teblet {
-    margin-bottom: 36px;
-  }
 }
 
 .project-list__item:hover .cards-overlay {

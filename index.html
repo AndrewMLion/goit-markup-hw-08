@@ -13,55 +13,61 @@
   </head>
   <body>
     <!-- Header site -->
-    <header class="header container">
-      <a class="link header__logo" href="./index.html">
-        <span class="header__web">Web</span><span class="header__studio">Studio</span></a
-      >
-      <!-- Min menu -->
-      <div class="menu">
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use href="./images/icon.svg#menu"></use>
-          </svg>
-        </button>
-        <!-- Site Nav -->
+    <header class="header">
+      <div class="container">
+        <a class="link header__logo" href="./index.html">
+          <span class="header__web">Web</span><span class="header__studio">Studio</span></a
+        >
+        <!-- Min menu -->
+        <div class="menu">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use href="./images/icon.svg#menu"></use>
+            </svg>
+          </button>
+          <!-- Site Nav -->
 
-        <nav class="site-nav">
-          <ul class="list site-nav__list">
-            <li class="site-nav__item">
-              <a class="link site-nav__link current" href="./index.html">Студия</a>
+          <nav class="site-nav">
+            <ul class="list site-nav__list">
+              <li class="site-nav__item">
+                <a class="link site-nav__link current" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="link site-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="site-nav__item"><a class="link site-nav__link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contacts -->
+
+          <ul class="list headercont">
+            <li class="headercont__item">
+              <div class="phone">
+                <a class="headercont__link headercont__link--nomber link" href="tel:+380961111111"
+                  ><svg class="icon-smartphone">
+                    <use href="./images/icon.svg#icon-smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </div>
             </li>
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="./portfolio.html">Портфолио</a>
+            <li class="headercont__item">
+              <div class="mail">
+                <a
+                  class="headercont__link headercont__link--mail link"
+                  href="mailto:info@devstudio.com"
+                  ><svg class="icon-mail">
+                    <use href="./images/icon.svg#icon-mail"></use></svg
+                  >info@devstudio.com</a
+                >
+              </div>
             </li>
-            <li class="site-nav__item"><a class="link site-nav__link" href="">Контакты</a></li>
           </ul>
-        </nav>
-
-        <!-- Contacts -->
-
-        <ul class="list headercont">
-          <li class="headercont__item">
-            <div class="phone">
-              <a class="headercont__link headercont__link--nomber link" href="tel:+380961111111"
-                ><svg class="icon-smartphone">
-                  <use href="./images/icon.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </div>
-          </li>
-          <li class="headercont__item">
-            <div class="mail">
-              <a
-                class="headercont__link headercont__link--mail link"
-                href="mailto:info@devstudio.com"
-                ><svg class="icon-mail">
-                  <use href="./images/icon.svg#icon-mail"></use></svg
-                >info@devstudio.com</a
-              >
-            </div>
-          </li>
-        </ul>
+        </div>
       </div>
 
       <!-- Mobile menu -->
@@ -139,7 +145,7 @@
           <ul class="list benefits__list">
             <li class="benefits__item">
               <div class="attention">
-                <svg class="icon-precul" width="70" height="70">
+                <svg class="icon__benefits" width="70" height="70">
                   <use href="./images/icon.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -150,7 +156,7 @@
             </li>
             <li class="benefits__item">
               <div class="attention">
-                <svg class="icon-benefits" width="70" height="70">
+                <svg class="icon__benefits" width="70" height="70">
                   <use href="./images/icon.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -161,7 +167,7 @@
             </li>
             <li class="benefits__item">
               <div class="attention">
-                <svg class="icon-precul" width="70" height="70">
+                <svg class="icon__benefits" width="70" height="70">
                   <use href="./images/icon.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -172,7 +178,7 @@
             </li>
             <li class="benefits__item">
               <div class="attention">
-                <svg class="icon-precul" width="70" height="70">
+                <svg class="icon__benefits" width="70" height="70">
                   <use href="./images/icon.svg#icon-astronaut"></use>
                 </svg>
               </div>

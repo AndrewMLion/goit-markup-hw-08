@@ -8,16 +8,14 @@
 
     text-align: center;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
       font-size: 28px;
       line-height: 1.17;
     }
   }
 
   &__list {
-    @media screen and (min-width: 480px) {
-      margin-top: 30px;
-    }
+    margin-top: 30px;
 
     @media screen and (min-width: 768px) {
       display: flex;

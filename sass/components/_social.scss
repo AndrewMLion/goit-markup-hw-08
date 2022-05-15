@@ -1,16 +1,18 @@
 .social {
   display: block;
+
+  margin-top: 16px;
+
   fill: getColor('icon-social');
 
   &__list {
     display: flex;
     @media screen and (max-width: 1199px) {
       justify-content: center;
-      margin-top: 16px;
     }
 
     @media screen and (min-width: 1200px) {
-      margin: 16px 32px 0 32px;
+      margin: 0 32px 0 32px;
 
       justify-content: space-between;
     }
