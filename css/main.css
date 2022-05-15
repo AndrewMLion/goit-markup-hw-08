@@ -498,7 +498,7 @@ button {
   text-decoration: none;
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 479px) {
   .mobil-headercont__link--nomber {
     font-size: calc(1em + 4vw);
   }
@@ -512,7 +512,7 @@ button {
   color: #757575;
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 479px) {
   .mobil-headercont__link--mail {
     font-size: calc(1em + 2vw);
   }
@@ -544,7 +544,7 @@ button {
   color: #2196f3;
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 479px) {
   .mobile-menu-social__link {
     font-size: 3vw;
   }
@@ -1859,7 +1859,30 @@ button {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  margin: 63px 24px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .cards-overlay__text {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards-overlay__text {
+    margin: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards-overlay__text {
+    margin: 49px 24px 77px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-overlay__text {
+    margin: 63px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -68,7 +68,7 @@
   }
 
   &__link--nomber {
-    @media screen and (max-width: 485px) {
+    @media screen and (max-width: 479px) {
       font-size: calc(1em + 4vw);
     }
 
@@ -83,7 +83,7 @@
   }
 
   &__link--mail {
-    @media screen and (max-width: 485px) {
+    @media screen and (max-width: 479px) {
       font-size: calc(1em + 2vw);
     }
 
@@ -110,7 +110,7 @@
   }
 
   &__link {
-    @media screen and (max-width: 485px) {
+    @media screen and (max-width: 479px) {
       font-size: 3vw;
     }
 
